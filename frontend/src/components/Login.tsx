@@ -1,7 +1,13 @@
+import { LOGIN_BG_IMAGE_SRC } from '../constants';
+
 export default function Login() {
+  const loginCardStyle = {
+    backgroundImage: `linear-gradient(145deg, rgba(17, 23, 41, 0.82), rgba(7, 10, 18, 0.7)), url('${LOGIN_BG_IMAGE_SRC}')`,
+  };
+
   return (
     <section className="login-shell">
-      <div className="login-panel">
+      <div className="login-panel" style={loginCardStyle}>
         <div className="login-badge">Secure Entry</div>
         <h1>Welcome back, Guardian.</h1>
         <p>
@@ -27,17 +33,6 @@ export default function Login() {
           <a href="/">Forgot access?</a>
         </div>
       </div>
-
-      <aside className="login-side">
-        <div className="stat-card">
-          <span>Daily Focus</span>
-          <strong>3D cinematic login flow</strong>
-        </div>
-        <div className="stat-card stat-card-soft">
-          <span>Theme</span>
-          <strong>Batman-inspired, premium, dark, and dramatic</strong>
-        </div>
-      </aside>
     </section>
   );
 }

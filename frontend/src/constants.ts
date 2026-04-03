@@ -1,0 +1,2 @@
+export const INTRO_IMAGE_SRC = 'https://res.cloudinary.com/dke9pxnjc/image/upload/v1775243259/Batman_ia_dqdmoa.jpg';
+export const LOGIN_BG_IMAGE_SRC = 'https://res.cloudinary.com/dke9pxnjc/image/upload/v1775244865/took_a_while_pgdvxu.jpg';

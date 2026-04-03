@@ -1,6 +1,5 @@
 import { useState } from 'react';
-
-const INTRO_IMAGE_SRC = '/images/Batman%20ia.jpeg';
+import { INTRO_IMAGE_SRC } from '../constants';
 
 export default function Intro() {
   const [hasImageError, setHasImageError] = useState(false);
@@ -22,7 +21,7 @@ export default function Intro() {
           />
         </div>
       ) : (
-        <div className="intro-image-fallback">Could not load /public/images/Batman ia.jpeg</div>
+        <div className="intro-image-fallback">Could not load the Cloudinary intro image</div>
       )}
 
       <div className="intro-title">
